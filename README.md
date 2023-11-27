@@ -1,6 +1,9 @@
 # ForestCSS Framework
 
 ## What is ForestCSS?
+
+<img src="forestcss.png" size="300">
+
 ForestCSS is a CSS framework designed to "forestify" and provide a base foundation for styling any HTML web page. ForestCSS was designed to provide a calming, earthy, and forest theme to any web page.
 
 ## How can I use ForestCSS?
