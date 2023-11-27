@@ -1,0 +1,237 @@
+/* Variables */
+:root {
+  --color-background: #d2e7ca;
+  --color-foreground: #4c5944;
+  --color-dark: #112803;
+  --color-light: #ace987;
+  --color-md-light: #94cc71;
+  --color-md-dark: #35601b;
+  --color-primary: #3c9406;
+  --color-info: #2f4f1b;
+  --color-callout: #ddc88a;
+  --color-lightest: #fff;
+  --color-header-background: #aee99f;
+  --color-input-background: #F5F5DC;
+  --color-accent: #ff7e3a;
+  --color-danger: red;
+  --color-success: green;
+  --font-family: Jura, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --color-text: #333;
+  --input-color-text: #F5F5DC;
+}
+
+/* Body Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  padding: 1.5em;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-header-background);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: var(--color-foreground);
+  font-size: 25px;
+  padding: 38px 30px;
+  display: inline-block;
+  transition: transform 0.5s ease 0s;
+}
+
+.navbar ul li a:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  color: #00695c;
+  /* Custom color for headings */
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* Text Elements Styles */
+strong {
+  font-weight: bold;
+  color: var(--color-accent)
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+abbr {
+  border-bottom: 1px dotted #333;
+  cursor: help;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Form Controls Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: var(--color-input-background);
+  border: 1px solid var(--color-foreground);
+  color: var(--input-color-text);
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch-2 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-2 input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-input-background);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-foreground);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch-2 input:checked+.slider {
+  background-color: var(--color-accent);
+}
+
+.switch-2 input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.switch-slider {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+
+button {
+  background-color: var(--color-input-background);
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.button-general:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.button-danger:hover {
+  background-color: var(--color-danger);
+  transform: scale(1.1);
+}
+
+.button-safe:hover {
+  background-color: var(--color-success);
+  transform: scale(1.1);
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-right: 0.5em;
+}
+
+/* Custom Properties */
+:root {
+  --primary-color: #4CAF50;
+}
+
+/* Local Scope for Buttons */
+.button {
+  --button-background: var(--primary-color);
+  color: #fff;
+  background-color: var(--button-background);
+  /* Additional Button Styles */
+}
